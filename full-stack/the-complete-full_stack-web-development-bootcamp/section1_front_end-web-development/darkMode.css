@@ -1,0 +1,156 @@
+a {
+    color: lightskyblue;
+}
+.bld {
+    font-weight: bold;
+}
+body {
+    background-color: black;
+}
+.date {
+    margin-bottom: 20px;
+    text-align: right;
+}
+.date > span {
+    padding: 2.5px;
+    color: black;
+    background-color: azure;
+}
+.emp { /*Emphasis*/
+    color: #5D8736; /*https://colorhunt.co/palette/5d8736809d3ca9c46cf4ffc3*/
+}
+footer {
+    margin: auto;
+    padding: 5px 10px;
+    color: darkgrey;
+    text-align: center;
+}
+.fsi {
+    font-style: italic;
+    color: whitesmoke;
+}
+h1 {
+    color: olive;
+}
+h2 {
+    color: rgb(142, 172, 205);
+}
+h3 {
+    color: rgb(102, 123, 198);
+}
+h4 {
+    color: steelblue;
+    font-size: 14pt;
+}
+h5 {
+    color: chocolate;
+    font-size: 13pt;
+}
+h6 {
+    font-size: 12pt;
+}
+header {
+    margin: auto;
+    padding: 5px 10px;
+    text-align: center;
+}
+header hr {
+    border: 1px dotted grey;
+}
+header img {
+    margin: auto;
+    width: 40%;
+}
+.himg3 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 3%;
+}
+header small {
+    font-size: 11pt;
+    color: #AC7EE1;
+}
+header ul {
+    list-style: none;
+    margin: 2px;
+    padding-left: 2px;
+    display: inline-block;
+}
+header li {
+    color: cornflowerblue;
+    display: inline-block;
+}
+img {
+    margin: 1px 0;
+    width: 100%;
+}
+.img25 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+.img40 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.img50 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.img80 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.key {
+    color: rgb(106, 154, 176);
+}
+.lh70 {
+    line-height: 70%;
+    padding: 1px 0;
+}
+main {
+    margin: auto;
+    padding: 5px 10px;
+    color: darkgrey;
+    line-height: 1.6;
+}
+strong {
+    font-weight: normal;
+    color: darkkhaki;
+}
+ul.cust {
+    list-style: none;
+    padding: 10px 20px;
+    border-left: 3px solid red;
+    background-color: rgb(31, 45, 65);
+    width: fit-content;
+}
+ul.cust li {
+    margin: 5px 0;
+    padding: 0 20px;
+    position: relative;
+}
+ul.cust li::before {
+    content: "\2713"; /*Unicode for (✓)*/
+    position: absolute;
+    top: -1px;
+    left: 1px;
+    color: #4CAF50;
+    font-size: 12pt;
+}
+ul.non { /*none*/
+    list-style-type: none;
+    padding: 10px;
+    border-left: 3px solid red;
+    background-color: rgb(31, 45, 65);
+    width: fit-content;
+}
+ul.non li {
+    margin: 5px 0;
+}

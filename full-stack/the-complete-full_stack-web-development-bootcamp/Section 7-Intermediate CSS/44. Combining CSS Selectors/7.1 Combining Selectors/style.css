@@ -1,0 +1,79 @@
+/* Write your code here: */
+
+/*
+1. Group rule
+
+    selector, selector {
+        color: blueviolet;
+    }
+
+    Selects both of the selectors or even more(2 or 3 different selectors) & applies the same style to the entire group. */
+h1, h2 {
+    color: blueviolet;
+}
+
+/*
+2. Child
+    
+    We can use the right angle bracket (>) in order to select a child of another selector.
+
+    selector > selector {
+        color: firebrick;
+    }
+
+    So in this case, the first selector is the parent & the second selector is the child
+
+    A direct descendant, so just one level down, we might have a child.
+
+    The important thing is that this relationship is only 1 generation deep.
+    
+    It has to be only 1 level nested inside. */
+.box > p {
+    color: firebrick;
+}
+
+/*
+3. Descendant
+
+    selector selector {
+        color: blue;
+    }
+
+    Here we've got 2 selectors, the ancestor & the descendant. */
+.box li {
+    color: blue;
+}
+
+/*
+4. Chaining
+
+    Apply where ALL selectors are true
+
+    selectorselector {
+        color: seagreen;
+    }
+
+    <h1 id="title" class="big heading">Hello World</h1>
+    h1#title.big.heading - Now we have a super, super specific selector where we've chained all of these selectors together to apply to just one single element.
+
+    We use the chaining method to be really,really specific.
+    That is the purpose of chaining */
+li.done {
+    color: seagreen;
+}
+
+/*
+5. Combining combiners
+
+    selector selectorselector {
+        font-size: 2rem;
+    }
+        
+    We can also combine these different combinations together.
+    
+    It gets a little bit more complex this way, but just in case you see it out in the wild.
+    
+    You can combine lots of different combinations. */
+ul p.done {
+    font-size: 0.5rem;
+}

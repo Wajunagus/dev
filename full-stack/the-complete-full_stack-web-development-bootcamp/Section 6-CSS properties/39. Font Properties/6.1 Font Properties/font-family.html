@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Font Family</title>
+  <style>
+    h1 {
+        font-family: "Lora", serif; /* CSS rule copied from fonts.google.com */
+    }
+
+    #helvetica {
+      font-family: Helvetica, sans-serif;
+    }
+
+    #arial {
+      font-family: Arial, sans-serif;
+    }
+
+    #serif {
+      font-family: serif;
+    }
+
+    #sans-serif {
+      font-family: sans-serif;
+    }
+
+    #cursive {
+      font-family: cursive; /* Cursive is a little bit curly. That's how I remember it. */
+    }
+
+    #monospace {
+      font-family: monospace; /* Monospace has all the letters occupying the same width, similar to a typewriter or code. */
+    }
+
+    #fantasy {
+      font-family: fantasy; /* Fantasy is usually something kind of wild. */
+    }
+    /*
+    These generic fonts will be different depending on the computer & the browser that you use.
+    So you might not see the same type of fonts that I have here,
+    but if you specify a specific font & you make sure that it's linked to, then we should all be looking @ the same font face. */
+  </style>
+  <!--
+    * fonts.google.com
+    * This is a link that is going to pull in the Google font for any user on the internet.
+    * So it doesn't matter if they have a Mac or a PC or which fonts they have downloaded on their computer,
+      they'll all be able to access this font coz we're including it in the link. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Font Family</h1>
+  <p id="helvetica">Helvetica</p>
+  <p id="arial">Arial</p>
+  <p id="serif">Serif</p>
+  <p id="sans-serif">Sans Serif</p>
+  <p id="cursive">Cursive</p>
+  <p id="monospace">Monospace</p>
+  <p id="fantasy">Fantasy</p>
+</body>
+</html>

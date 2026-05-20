@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Media Query</title>
+  <style>
+    /*
+    TODO: Change the background color for each device
+    [lightsalmon] Mobile Devices: 319px — 480px
+    [powderblue] iPads and Tablets: 481px — 1200px
+    [limegreen] Laptops: 1201px — 1600px
+    [seagreen] Desktops: 1601px and more
+
+    He're I've included some of the common breakpoints for the different devices that you're probably going to want to target.
+    */
+    body {
+        background-color: aquamarine;
+    }
+
+    /* Mobile Devices ^
+    Normally you're not really going to display your website on anything that's less than mobile size, right?
+    Like there's not that many things that are narrower than 320px.
+    @media (max-width: 480px) {
+        body {
+            background-color: lightsalmon;
+        }
+    }
+    */
+    @media (min-width: 319px) and (max-width: 480px) {
+        body {
+            background-color: lightsalmon;
+        }
+    }
+    /* $ */
+
+    @media (min-width: 481px) and (max-width: 1200px) { /* iPads & tablets */
+        body {
+            background-color: powderblue;
+        }
+    }
+
+    @media (min-width: 1201px) and (max-width: 1600px) { /* Laptops */
+        body {
+            background-color: limegreen;
+        }
+    }
+
+    @media (min-width: 1601px) { /* Desktops */
+        body {
+            background-color: seagreen;
+        }
+    }
+  </style>
+</head>
+<body>
+</body>
+</html>

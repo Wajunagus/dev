@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40. Inspecting CSS</title>
+    <link rel="stylesheet" href="/darkMode.css">
+</head>
+<body>
+    <div><p class="date"><span>Thursday, August 8 2024</span></p>
+        <div class="hdg">
+            <h1>CSS Inspection</h1>
+            <p>Using the CSS Overview</p>
+            <hr>
+        </div>
+        <div class="main">
+            <p>Now in this lesson, we're going to deep dive into "CSS Inspection" & learn about the <span class="key">Chrome Developer Tools</span> that allow us to figure out what our CSS is doing & <span class="key">potentially diagnose any bugs or resolve any issues</span>.</p>
+            <p>As I mentioned before, the Chrome Developer Tools are <span class="key">a really <strong>powerful</strong> suite of tools</span> that is <span class="key">completely <strong>free</strong></span> & comes bundled with the <span class="key"><strong>Chrome</strong> browser</span>.</p>
+        </div>
+        <div class="main">
+            <p>&#x1F4DC;<a href="https://appbrewery.github.io/just-add-css/" target="_blank">https://appbrewery.github.io/just-add-css/</a></p>
+            <p>We can use this as an example to learn more about CSS inspection.</p>
+            <div class="img80">
+                <img src="./assets/images/appbrewery.github.io-just_add_css.png" alt="appbrewery.github.io-just_add_css">
+            </div>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>Using Inspect</h2>
+                <hr>
+            </div>
+            <div class="img80">
+                <img src="./assets/images/Inspect.png" alt="Inspect">
+            </div>
+            <p>Another way of bringing up the Developer console is simply to right-click on any element you're interested in, & then click on <strong>Inspect</strong> & it will do the same thing but in addition, it will highlight in the HTML that element that you selected.</p>
+            <hr>
+            <p>Now what if you wanted to select a different element while you're here?</p>
+            <p>Well, you can use this button up here to select an element visually.</p>
+            <div class="img80">
+                <img src="./assets/images/Inspect ii.png" alt="Inspect ii">
+            </div>
+        </div>
+        <div class="main">
+            <p>Whenever you insert a HTML element, it comes with automatic preloaded CSS & that's what you're getting by default.</p>
+            <p>Now, the important thing to remember is any of the changes that you make in the Chrome Developer Tool does not affect your original file. It's just you affecting your local copy that's loaded up inside the Chrome browser.</p>
+            <p>Even if you load up one of your local websites that you're developing, & you change a whole bunch of things, this is just temporary.</p>
+            <p>It's for you to look & try things out & see how you like it before you add these rules into your actual CSS source code.</p>
+            <p>The main thing to <strong>focus</strong> on here is <strong>how</strong> to use the <strong>Inspector</strong> <span class="key">to understand other peoples'</span>, as well as <span class="key">your own websites</span> & <span class="key">how the CSS is laid out</span>.</p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>The Computed Tab</h2>
+                <hr>
+            </div>
+            <p>So how do you know what's actually being applied to your CSS element?</p>
+            <p>Well, that's where the "Computed tab" comes in, coz when you click on it, you'll see the actaul color in terms of RGB.</p>
+            <p>So how much red, green & blue is being applied to the text color & other properties as well, & it removes all of the craziness of all the crossing-out stuff. And you can actually see in one place what is being applied.</p>
+            <div class="img80">
+                <img src="./assets/images/Computed.png" alt="Computed">
+            </div>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>CSS Overview</h2>
+                <hr>
+            </div>
+            <p>Now another feature of Chrome Developer Tool that I find really useful is CSS Overview.</p>
+            <p>This is a neat feature where you can select "Capture overview" & it will show you a bunch of useful things like, for example, that there are 2 background colors.</p>
+            <p>The different text colors.</p>
+            <p>And we've also got information on the different fonts that are being used on the web page.</p>
+            <div class="img80">
+                <img src="./assets/images/CSS Overview.png" alt="CSS Overview">
+                <img src="./assets/images/Capture overview.png" alt="Capture overview">
+                <img src="./assets/images/Capture overview_ii.png" alt="Capture overview_ii">
+            </div>
+            <p>I find this really neat when I come across a website that I really like & I'm trying to figure out, oh, what font is that? So you can see the colors, you can see the fonts.</p>
+            <p>And maybe I can copy it for my own use later on.</p>
+            <p>Have a play around with the CSS Inspector & I want you to take a look @ selecting different elements, looking @ their styles, trying to add some styles in the Chrome Developer Tools & looking around @ some of the other things we've mentioned.</p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>Quiz</h2>
+                <hr>
+            </div>
+            <p>&#x270D;<a href="https://appbrewery.github.io/css-inspection/" target="_blank">https://appbrewery.github.io/css-inspection/</a></p>
+            <p>Use the CSS inspector to answer the 4 quiz questions & once you've put in the answer, click Submit & you'll see if you got it right or if you got it wrong.</p>
+        </div>
+    </div>
+</body>
+</html>

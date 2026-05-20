@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Display Property Example</title>
+  <style>
+    /*--
+    1. Block
+        When an element has display set to block, then it's going to take up the entire full width.
+        This means that if you have another element, then it's going to go below it & it's not going to go onto the same line.
+
+    2. Inline
+        It means that if we had 2 elements,
+        then they're both going to go into the same line until we can no longer fit any more onto the width of the web page,
+        in which case they would go to the next line.
+
+        Now, one of the important things to remember about elements which are inline in their display is you can't actually set the size of these elements.
+        You can't set the width & the height.
+        The reason for this is coz they will default to the size of their content.
+        If you only had the word "Hello", then it would only be as wide as it would need to allow that element to display.
+        And if you had a much longer sentence then your inline element would stretch to fit that size.
+
+    3. Inline-Block
+        What's unique about this,
+        which is a sort of halfway point between the inline & the block,
+        is the block element allows us to set the the height & width,
+        & the inline aspect of the setting allows us to have elements that go on to the same line.
+
+    4. None
+        What that's going to do is to make any element on the screen basically disappear.
+        And sometimes this is useful when you have a button that say,
+        hides an element or when you check-off an item in the to-do list & you want it to disappear,
+        this might be the property that you'll need. 
+    --*/
+
+    /*--
+    TODO
+        1. By changing only the display property of the CSS make all 3 squares line up horizontally like in goal1 image.
+
+        @Wajunagus:
+            If you had a little bit more narrow width,
+            then coz it's an inline-block,
+            it will move to the next page so that it actually can show the full width of each element,
+            but on a normal viewing screen,
+            so if you actually opened this in a website, then you should see them lining up perfectly horizontally.
+
+        2. Change only the display property to make all 3 squares line up vertically like in goal2 image.
+    --*/
+
+    p {
+      color: white;
+    }
+
+    .red {
+      display: block; /*-- 1. block to inline-block, 2. inline-block to block --*/
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+
+    .green {
+      display: block; /*-- 1. inline to inline-block, 2. inline-block to block --*/
+      width: 200px;
+      height: 200px;
+      background-color: green;
+    }
+
+    .blue {
+      display: block; /*-- inline-block to block --*/
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+  </style>
+</head>
+
+
+<body>
+  <h1>CSS Display Property</h1>
+  <p class="red">Red Paragraph </p>
+  <p class="green">Green Paragraph</p>
+  <p class="blue">Blue Paragraph</p>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>51. Media Queries</title>
+    <link rel="stylesheet" href="/darkMode25.css">
+</head>
+<body>
+    <div><p class="date"><span>Saturday, January 4 2025</span></p>
+        <div class="main">
+            <div class="hdg-crs">
+                <h1>Media Queries</h1>
+                <p>Adding breakpoints to define responsive layouts</p>
+                <hr>
+            </div>
+            <div class="hdg-crs">
+                <h2>Max Width</h2>
+                <hr>
+            </div>
+            <div class="img50">
+                <img src="./assets/images/max-width.png" alt="max-width.png">
+            </div>
+            <p>Essentially, instead of a <strong>selector</strong>, we have the "<strong>@media</strong>" keyword & here we can define what's called a <strong>breakpoint</strong>.</p>
+            <p>This essentially says that @ that particular width, anything that is less than or equal to 600px, then you should use the styling in there, instead.</p>
+            <p>We provide an override to the default styling.</p>
+            <p>For example, change the h1 to have a smaller font size when it's on a mobile phone instead of a full width desktop website.</p>
+        </div>
+        <div class="main">
+            <div class="hdg-crs">
+                <h2>Min Width</h2>
+                <hr>
+            </div>
+            <div class="img50">
+                <img src="./assets/images/min-width.png" alt="min-width.png">
+            </div>
+            <p>Now alternatively, you can use a different keyword here.</p>
+            <p>By changing that from max to min, essentially you're going the other direction of responsiveness.</p>
+            <p>So you're saying anything that is from 600px upwards, then we should have a different styling.</p>
+            <p>So you're basically targeting bigger screens with min-width.</p>
+        </div>
+        <div class="main">
+            <p>So you're essentially <span class="key">targeting different screen sizes</span> & providing <strong>different styles</strong> for those <strong>different screen sizes</strong>.</p>
+        </div>
+        <div class="main">
+            <div class="hdg-crs">
+                <h2>Combine</h2>
+                <hr>
+            </div>
+            <div class="img50">
+                <img src="./assets/images/combine.png" alt="combine.png">
+            </div>
+            <p>Now you can also combine <strong>different breakpoints</strong> to <strong>target</strong> something that is a <strong>specific size</strong>.</p>
+            <p>So in this case, minimum width for this style is 600px & maximum width for this style is 900px.</p>
+            <hr class="dash">
+            <div class="img50">
+                <img src="./assets/images/combine ii.png" alt="combine ii.png">
+            </div>
+            <p>Now if you flip that around & you change the smaller size to a max-width, then you're taking a different approach.</p>
+            <p>You're saying anything that is less than 600px & anything that is greater than 900px on those screen sizes, let's apply these styles.</p>
+            <p>So you can combine things in many different ways.</p>
+        </div>
+        <div class="main">
+            <div class="hdg-crs">
+                <h2>Device</h2>
+                <hr>
+            </div>
+            <div class="img50">
+                <img src="./assets/images/device.png" alt="device.png">
+            </div>
+            <p>In addition to max-width & min-width, you might also see this "screen" keyword being used, which is not really necessary by default coz it's going to apply it to all screens, but if we think about the alternative to screen is a keyword called <span class="key">"print"</span>.</p>
+            <p class="key">And what this allows you to do is to use the media query to target only when your website is being <strong>printed</strong> & to give it a <strong>different layout</strong>.</p>
+            <p>I don't normally recommend adding the screen keyword if you're just writing a normal media query, but when you do see it out there in the wild, then you'll know what that means, it's just saying <strong>targeting screens</strong>, or <strong>targeting print</strong>.</p>
+        </div>
+        <div class="main">
+            <div class="hdg-crs">
+                <h2>Demo code</h2>
+                <hr>
+            </div>
+            <div class="img50">
+                <img src="./assets/images/demo code.png" alt="demo code.png">
+                <p>This is saying when the website is a lot narrower, such as on a mobile phone, we should actually have a smaller square. <span class="key">So that it makes better use of the <strong>screen real estate</strong> & it's scaled to fit to that screen size.</span></p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="hdg-crs">
+                <h2>&#x1F4BD;Resourses</h2>
+                <hr>
+            </div>
+            <p>&#x1F4D6;<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries" target="_blank">mdn web docs - Using media queries</a></p>
+            <p>There's a lot more that you can do with media queries & you can have very complex media queries, but most of the time you're going to be using pretty simple media queries such as max-width & min-width, & you won't use a lot of these other features.</p>
+            <p>But as always, it's good to be aware that they exist.</p>
+        </div>
+        <div class="main">
+            <div class="hdg-crs">
+                <h2>&#x270D;Exercise</h2>
+                <hr>
+            </div>
+            <p>&#x270D;<a href="./8.3 Media Query/index.html" target="_blank">8.3 Media Query/index.html</a></p>
+        </div>
+        <div class="main">
+            <p>In the next lesson, we've got a final project for this section.</p>
+        </div>
+    </div>
+</body>
+</html>

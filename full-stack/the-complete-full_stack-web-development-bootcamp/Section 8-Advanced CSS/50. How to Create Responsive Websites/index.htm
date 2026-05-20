@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50. How to Create Responsive Websites</title>
+    <link rel="stylesheet" href="/darkMode.css">
+</head>
+<body>
+    <div><p class="date"><span>Thursday, December 26 2024</span></p>
+        <div class="hdg">
+            <h1>Responsive Websites</h1>
+            <p>Making websites look good on all screen sizes</p>
+        </div>
+        <div class="main">
+            <p>So we've talked a little bit about layout using CSS.</p>
+            <p>Now a really important concept in terms of layout is how it should change depending on the size of the screen, coz these days there are many different screen sizes; desktops, laptops, iPads, mobile phones & we want our website to look good on all of them.</p>
+            <p>And in order to do that, we need to make our websites responsive, so it responds to the changes in the screen size.</p>
+            <p>There are 4 main ways of doing this</p>
+                <ol class="emph">
+                    <li><p>Media Queries</p></li>
+                    <li><p>CSS Grid</p></li>
+                    <li><p>CSS Flexbox</p></li>
+                    <li><p>External Frameworks e.g. Bootstrap; you can get really good responsiveness.</p></li>
+                </ol>
+        </div>
+        <div class="hdg">
+            <h2>RESOURCES</h2>
+        </div>
+        <div class="main">
+            <p>&#x1F4DC;<a href="https://tastybasics.nl/" target="_blank">TastyBasics</a></p>
+        </div>
+        <div class="hdg">
+            <h2>Media Query</h2>
+        </div>
+        <div class="main">
+            <div class="img50">
+                <img src="./assets/images/Media Query.png" alt="Media Query.png">
+                <p>&#x1F4DC;<a href="./8.2 Responsiveness/media-query.html" target="_blank">8.2 Responsiveness/media-query.html</a></p>
+            </div>
+            <p>This is essentially something that you put in instead of a selector in your CSS.</p>
+            <p>As you remember, this is normally the part before the curly braces where you add your selector, your .class or your #ID, but instead we use an @ sign & then the word media, & afterwards we have some brackets & we add in a breakpoint.</p>
+            <p>Here we've set the max-width to 600 & everything that is up to that size will have a different CSS, which we can define in here.</p>
+            <p>We can define various different widths.</p>
+        </div>
+        <div class="hdg">
+            <h2>CSS Grid</h2>
+        </div>
+        <div class="main">
+            <div class="img50">
+                <img src="./assets/images/CSS Grid.png" alt="CSS Grid.png">
+            </div>
+            <p>Now, another common method for creating responsiveness is through CSS Grid.</p>
+            <p>This is a little bit harder to understand, which is why we're dedicating a whole section to teaching you about it.</p>
+            <p>But it also means that it's a lot more flexible.</p>
+            <p>So you could create any of these designs, let's say we pick 1 of these, for example the 5th design & we want to do that on our website.</p>
+            <div class="img50">
+                <img src="./assets/images/CSS Grid ii.png" alt="CSS Grid ii.png">
+                <img src="./assets/images/CSS Grid iii.png" alt="CSS Grid iii.png">
+                <p>We, could use CSS Grid by simply creating a div that contains 5 divs.</p>
+                <p>And each of these divs are given a class called ".card," but the containing div gets a different style & we apply the display grid to the containing div.</p>
+                <img src="./assets/images/CSS Grid iv.png" alt="CSS Grid iv.png">
+                <p>&#x1F4DC;<a href="./8.2 Responsiveness/grid.html" target="_blank">8.2 Responsiveness/grid.html</a></p>
+                <p>And remember, previously we learned about display & we saw how it could be inline, block, none & in this case, if we set it to grid, then we're basically saying that we're going to use the system of CSS Grid to do the layout.</p>
+                <p>This complex layout is very easily done using just 5, 6 lines of code using CSS Grid.</p>
+            </div>
+            <p>CSS Grid is a pretty simple system where you can define how you want the columns & rows to be laid out.</p>
+            <p>CSS Grid, as you can see, is an incredibly flexible way of creating very complex layout very quickly.</p>
+            <p>Now, we're going to be diving much, much deeper into CSS Grid & I'm going to be showing you & walking you through a lot of the different features, but we're going to be dedicating a whole section to it. So don't worry if you don't fully understand it right now.</p>
+        </div>
+        <div class="hdg">
+            <h2>CSS Flexbox</h2>
+        </div>
+        <div class="main">
+            <div class="img50">
+                <img src="./assets/images/CSS Flexbox.png" alt="CSS Flexbox.png">
+                <img src="./assets/images/CSS Flexbox ii.png" alt="CSS Flexbox ii.png">
+                <img src="./assets/images/CSS Flexbox iii.png" alt="CSS Flexbox iii.png">
+                <p>&#x1F4DC;<a href="./8.2 Responsiveness/flexbox.html" target="_blank">8.2 Responsiveness/flexbox.html</a></p>
+                <p>We've got a div container that contains 4 divs.</p>
+                <p>If we make the parent container, so similar to last time where we made it use a display of grid, but instead this time we use a display of flex. Then we're saying to the CSS that we're using this Flexbox system.</p>
+                <p>And what this system then allows us to do is to set each of the divs inside the flex container. So notice we're targeting each of these cards & we can give them different settings.</p>
+                <p>And by using flex property, I've managed to set up a very complex width ratio to create the particular layout.</p>
+                <p>And as you can imagine, if we were working with floats, margin & all of those things that we've learnt about, it would be possible, but a lot more complicated to achieve this.</p>
+            </div>
+            <p>Similarly, I want to show you another powerful system that's often used, which is called Flexbox.</p>
+            <p>And this, again, is a big system which we're going to dive deep into but for now, I just want you to get a quick overview & a brief understanding of how it works.</p>
+            <p>If Grid is something that applies to 2D layouts, where you've got columns & you've got rows, then what Flexbox is really good @ is allowing you to create 1D layouts, whether if you want everything laid out as boxes on the horizontal or if you want everything laid out vertically as boxes on the vertical, then you're probably going to be using Flexbox for this.</p>
+            <p>And you can use this really flexible system with Flexbox to determine how you want the layout to be laid out horizontally. So maybe you could have a navigation bar on the right, which is flex of 1, & then you have a main content that's flex of 3.</p>
+            <p>But alternatively, you can flex in another direction. So maybe you want a heading section that is a flex of 1, & then you have the main content, which is a flex of 3, & then you have a footer which is also a 1. So then it's going to divide up the total height that you have on the web page.</p>
+            <p>So again, this is a more complex layout system which we're going to dive into & we're going to learn more about, but essentially in terms of gist, it's just about dividing up the width or dividing up the height based on the ratios that you provide.</p>
+            <p>And coz everything is a ratio & a percentage, then that means it is by default responsive, coz if the width changes, then everything is going to change proportionally. So none will have a fixed width but instead, it's going to work that number out based on what the total width is coz it's a percentage of the total width.</p>
+        </div>
+        <div class="hdg">
+            <h2>Bootstrap Framework</h2>
+        </div>
+        <div class="main">
+            <div class="img80">
+                <img src="./assets/images/Bootstrap Framework.png" alt="Bootstrap Framework.png">
+            </div>
+            <div class="img50">
+                <img src="./assets/images/Bootstrap Framework ii.png" alt="Bootstrap Framework ii.png">
+                <p>&#x1F4DC;<a href="./8.2 Responsiveness/bootstrap.html" target="_blank">8.2 Responsiveness/bootstrap.html</a></p>
+            </div>
+            <p>The reason why it's called a framework is coz it's external.</p>
+            <p>So it's not something that's built into CSS like Grid or Flexbox, but it's actually something that we have to bring in. So other people's code that we're going to use.</p>
+            <p>And essentially what they've done is they've defined a whole bunch of classes in their CSS.</p>
+            <p>So they've written an extensive amounts of CSS & they've put different rules for different selectors.</p>
+            <p>For example, you could have something called card, you could have something called row & you could have something called container, & they all will point to some CSS code inside the Bootstrap container, which has predefined layout.</p>
+            <p>Now, in terms of responsiveness, they also have a sort of flex system coz Bootstrap is in fact built on top of Flexbox.</p>
+            <p>Now, this system is a 12 division system.</p>
+            <p>So let me explain this.</p>
+            <p>If the full width of your website can be divided into 12 equal portions.</p>
+            <p>Now you can say if I want a particular div that is going to take up half of the width, then I can use the class ".col-6". And it's basically going to take up 6 of the columns.</p>
+            <p>Added together they add up to 12, which means that it's going to take up the entire width.</p>
+            <p>So we've now got 3 cards taking up the entire width of the website, but as we resize the website, then it's going to respond.</p>
+            <p>So a ".col-6" is going to be a 50% width. If the width was 1000px, then it's going to be 500px wide. If the width was 2000px, then the width will be 1000px etc.</p>
+            <p>And this is not only really good for responsiveness, but it's also really good coz I mentioned we can get styling brought into our website really easily just by using some of the pre-built components that comes with this framework.</p>
+            <p>Similar to Grid & Flexbox, we're going to be doing a section on Bootstrap as well so that you can learn more about this system & all of the features that are available to you once you understand how it works.</p>
+        </div>
+        <div class="main">
+            <p>In the next lesson, I'm going to dive deeper into media queries coz it's a relatively easy to understand system & it's not as complex as some of these 3, which we'll need to dedicate an individual section to & quite a lot of time too.</p>
+            <p>Now, @ this point, you might be thinking, well, there are all these different methods & they all seem great, but which one is the best & which one should I choose?</p>
+            <p>This is often such a common question I get from students, & I want to say to you that there is no such thing as the best when it comes to any sort of programming.</p>
+            <p>These are just tools & they could be tools like a hammer or a chisel or a drill.</p>
+            <p>They all have different specialities.</p>
+            <p>They're all good @ different things, basically.</p>
+        </div>
+        <div class="hdg">
+            <h2>Demo code</h2>
+        </div>
+        <div class="main">
+            <p>&#x1F4DC;<a href="./8.2 Responsiveness/index.html" target="_blank">8.2 Responsiveness/index.html</a></p>
+        </div>
+    </div>
+</body>
+</html>

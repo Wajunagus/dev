@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flexbox</title>
+  <style>
+    .flex-container {
+      display: flex;
+    }
+
+    .card {
+      background: blue;
+      border: 30px solid white;
+      height: 100px; /*-- Fixed height of 100px, so each of these cards should all have 100px in height --*/
+      flex: 1; /*-- Let's say that for all of them, by default, we want them to have a flex of 1. So what this does is it makes each of these cards have an equal width distribution. --*/
+    }
+
+    .first {
+      flex: 2; /*-- Twice the width of each of the unmodified divs. --*/
+    }
+
+    .second {
+      flex: 0.5; /*-- Half the width of the normal cards --*/
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Flexbox</h1>
+  <div class="flex-container">
+    <div class="first card"></div>
+    <div class="second card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+</body>
+</html>

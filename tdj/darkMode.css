@@ -1,0 +1,344 @@
+a {
+    color: lightskyblue;
+}
+.adv { /*Advertisement*/
+    text-align: center;
+}
+.bld {
+    font-weight: bold;
+}
+body {
+    background-color: #222222;
+    color: darkgrey;
+}
+.date {
+    margin: 10px 25px;
+    text-align: right;
+}
+.date > span {
+    padding: 5px 10px;
+    color: black;
+    background-color: azure;
+}
+.disc h4 { /*disclaimer*/
+    font-size: 12pt;
+}
+.disc p { /*disclaimer*/
+    font-size: 9pt;
+    color: #5D8736;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.emp { /*Emphasis*/
+    color: #5D8736; /*https://colorhunt.co/palette/5d8736809d3ca9c46cf4ffc3*/
+}
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    width: 94%;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+footer p {
+    margin: 5px 0;
+}
+.ft-hlt {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 5px;
+    background-color: rgb(31, 45, 65);
+    width: fit-content;
+}
+.fsi {
+    font-style: italic;
+    color: whitesmoke;
+}
+.gld {
+    color: goldenrod;
+}
+h1 {
+    margin: 5px 0;
+    color: olive;
+}
+h2 {
+    margin: 3px 0;
+    color: rgb(142, 172, 205);
+}
+h3 {
+    margin: 5px 0;
+    color: rgb(102, 123, 198);
+}
+h4 {
+    margin: 5px 0;
+    color: steelblue;
+    font-size: 14pt;
+}
+h5 {
+    margin: 0;
+    color: chocolate;
+    font-size: 13pt;
+}
+h6 {
+    color: mediumslateblue;
+    font-size: 12pt;
+}
+header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    /*margin-bottom: 10px;*/
+    padding: 5px 25px;
+    width: 94%;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+}
+header hr {
+    border: 1px dotted;
+}
+header img {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 3px 0;
+    width: 40%;
+}
+header p {
+    margin: 3px 0;
+    font-size: 16pt;
+    color: rgb(165, 148, 249);
+}
+header small {
+    font-size: 11pt;
+    color: #AC7EE1;
+}
+header ul {
+    list-style: none;
+    margin: 2px 0;
+    padding: 0;
+    display: inline-block;
+}
+header li {
+    display: inline-block;
+    /*margin-right: 5px;*/
+    color: cornflowerblue;
+}
+.d-hlt { /*<div></div> highlight*/
+    padding: 5px 10px;
+    background-color: rgb(31, 45, 65);
+    width: fit-content;
+}
+.p-hlt { /*<p></p> highlight*/
+    padding: 5px 10px;
+    background-color: rgb(31, 45, 65);
+    width: fit-content;
+}
+.s-hlt { /*<span></span> highlight*/
+    color: black;
+    background-color: azure;
+    padding: 0 5px;
+}
+html {
+    font-size: 12pt;
+}
+img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.img5 {
+    width: 5%;
+}
+.img10 {
+    width: 10%;
+}
+.img25 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+.img40 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.img50 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.img80 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.key {
+    color: rgb(106, 154, 176);
+}
+main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 25px;
+    width: 94%;
+    background-color: black;
+    border-radius: 10px;
+}
+main h2 {
+    text-align: center;
+}
+.h2-li { /*h2 lists*/
+    text-align: left;
+}
+main h3 {
+    text-align: center;
+}
+main > ol {
+    padding: 10px 50px;
+    border-left: 3px solid red;
+    background-color: #222222;
+    width: fit-content;
+}
+main li {
+    margin: 5px 0;
+    padding-left: 5px;
+}
+main > ul {
+    margin: 5px 0;
+    padding: 5px 40px;
+    border-left: 3px solid red;
+    background-color: rgb(31, 45, 65);
+    width: fit-content;
+}
+main p {
+    margin: 10px 0;
+}
+.mth {
+    margin: 10px 0;
+    font-size: 24pt;
+    font-weight: bold;
+    color: rgb(165, 148, 249);
+    text-align: center;
+}
+.qte { /*quote*/
+    padding: 10px 25px;
+    background-color: rgb(31, 45, 65);
+    text-align: center;
+    border-left: 3px solid darkgoldenrod;
+    width: fit-content;
+}
+.qte p {
+    margin: 5px 0;
+}
+strong {
+    font-weight: normal;
+    color: darkkhaki;
+}
+ul.cust {
+    list-style: none;
+    padding: 10px 20px;
+    border-left: 3px solid red;
+    background-color: rgb(31, 45, 65);
+    width: fit-content;
+}
+ul.cust li {
+    margin: 5px 0;
+    padding: 0 20px;
+    position: relative;
+}
+ul.cust li::before {
+    content: "\2713"; /*Unicode for (✓)*/
+    position: absolute;
+    top: -2px;
+    left: 1px;
+    color: #4CAF50;
+    font-size: 12pt;
+}
+ul.custii {
+    list-style: none;
+    padding: 10px 40px;
+    border-left: 3px solid red;
+    background-color: rgb(31, 45, 65);
+}
+ul.custii li {
+    margin: 5px 0;
+    padding: 0 25px;
+    padding-bottom: 5px;
+    position: relative;
+}
+ul.custii li::before {
+    content: "\261E"; /*Unicode for (☞)*/
+    position: absolute;
+    top: -11px;
+    left: -5px;
+    color: yellowgreen;
+    font-size: 20pt;
+}
+ul.custiii {
+    list-style: none;
+    padding: 10px 40px;
+    border-left: 3px solid red;
+    background-color: rgb(31, 45, 65);
+}
+ul.custiii li {
+    margin: 5px 0;
+    padding: 0 25px;
+    position: relative;
+}
+ul.custiii li::before {
+    content: "\1F4CC"; /*Unicode for 📌(Pushpin)*/
+    position: absolute;
+    top: -4px;
+    left: -5px;
+    /*color: orange;*/
+    font-size: 18px;
+}
+ul.non { /*none*/
+    list-style-type: none;
+    padding: 10px;
+    border-left: 3px solid red;
+    background-color: #222222;
+    background-color: rgb(31, 45, 65);
+    width: fit-content;
+}
+ul.non li {
+    margin: 5px 0;
+}
+/*
+https://www.w3schools.com/charsets
+💽 | Mini disk | &#x1F4BD;
+📸 | Camera with flash | &#x1F4F8;
+📺 | Television | &#x1F4FA;
+🎥 | Movie camera | &#x1F3A5;
+🎧 | Headphone | &#x1F3A7;
+💻 | PC | &#x1F4BB;
+📆 | Tear-off calendar | &#x1F4C6;
+⏰ | Alarm clock | &#x23F0;
+🎯 | Direct hit | &#x1F3AF;
+⏳ | Hourglass not done | &#x23F3;
+🎮 | Video game | &#x1F3AE;
+📈 | Upwards trend | &#x1F4C8;
+📉 | Downwards trend | &#x1F4C9;
+✍ | WRITING HAND | &#x270D;
+〈 | Left pointing angle bracket | &#x2329;
+〉 | Right pointing angle bracket | &#x232A;
+📜 | Scroll | &#x1F4DC;
+🕮 | Open book | &#x1F56E;
+⭳ | 2B73 | &#x2B73;
+💰 | Money bag | &#x1F4B0;
+‧ | HYPHENATION POINT | &#x2027;
+☑ | BALLOT BOX WITH CHECK | &#x2611;
+✅ | Check mark button | &#x2705;
+❌ | Cross mark | &#x274C;
+🔹 | Small blue diamond | &#x1F539;
+♙ | WHITE CHESS PAWN | &#x2659;
+♔ | WHITE CHESS KING | &#x2654;
+🔐 | Lock with key | &#x1F510;
+👀 | Eyes | &#x1F440;
+£ | GBP
+*/
