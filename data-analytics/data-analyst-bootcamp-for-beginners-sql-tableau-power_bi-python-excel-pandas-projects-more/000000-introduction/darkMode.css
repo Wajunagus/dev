@@ -1,0 +1,103 @@
+a {
+    color: aqua;
+}
+.bld {
+    font-weight: bold;
+}
+body {
+    background-color: black;
+}
+.fsi {
+    font-style: italic;
+    color: whitesmoke;
+    color: lightcyan;
+}
+h1 {
+    color: olive;
+}
+h2 {
+    color: rgb(142, 172, 205);
+    color: lightblue;
+}
+h3 {
+    color: deepskyblue;
+    color: rgb(102, 123, 198);
+}
+h4 {
+    color: steelblue;
+}
+header {
+    margin: auto;
+    padding: 5px 10px;
+}
+header hr {
+    border: 1px dotted;
+}
+header img {
+    margin: auto;
+    width: 15%;
+}
+header small {
+    font-size: 11pt;
+    color: #AC7EE1;
+}
+header ul {
+    list-style: none;
+    margin: 2px;
+    padding-left: 2px;
+    display: inline-block;
+}
+header li {
+    color: cornflowerblue;
+    display: inline-block;
+}
+img {
+    margin: 1px 0;
+    width: 100%;
+}
+.img25 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+.img40 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.img50 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.img80 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.key {
+    color: darkcyan;
+    color: rgb(3, 174, 210); /*https://colorhunt.co/palette/03aed2f8de22f45b26d12052*/
+}
+main {
+    margin: auto;
+    padding: 5px 10px;
+    color: darkgrey;
+}
+section {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: rgb(25, 25, 20);
+    border-radius: 1%;
+}
+strong {
+    font-weight: normal;
+    color: darkseagreen;
+    color: lightgreen;
+    color: lightseagreen;
+    color: mediumseagreen;
+    /*color: mediumspringgreen;*/
+}
