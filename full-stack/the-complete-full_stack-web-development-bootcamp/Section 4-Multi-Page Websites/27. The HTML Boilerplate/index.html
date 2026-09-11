@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27. The HTML Boilerplate</title>
+    <link rel="stylesheet" href="/darkMode.css">
+</head>
+<body>
+    <div class="lyr2"><p class="day">Thursday, May 30 2024</p>
+        <div class="ctr">
+            <h1>The HTML Boilerplate</h1>
+            <p class="h1Desc">Understanding HTML structure</p>
+        </div>
+            <p>Now that we've seen how HTML elements & tags work, it's time to explore the bigger picture, what's called the HTML Boilerplate. And this will allow us to understand the structure of our HTML files just like how there is structure to letters that you would write.</p>
+            
+            <img src="./assets/images/structure to a letter.png" alt="structure to a letter.png" class="ctr75">
+
+            <img src="./assets/images/The HTML Boilerplate.png" alt="The HTML Boilerplate.png" class="ctr75">
+                <ul>
+                    <li><p>At the top of every HTML file, there should be a "Doctype declaration." It tells the browser which version of HTML the file was written in. Now, the latest version of HTML is HTML5 & this line tells any browser that's reading our HTML file that we have written our code in HTML version 5.</p></li>
+                    <li><p>It's the actual "html". Now, this is going to be the "root" of the document. It means that everything else, every other element, no matter if it's an h1 or an image or a link, it's all going to go inside the opening & closing tags of the html element. And the attribute "lang" is the language of the text content in that element. So for example, if you're writing a website that is going to be targeted @ English speakers, then you're going to set your "lang" to English "en". <strong>Now this isn't very important for the users who can see your website, it's more important for the users who can't</strong>, coz there are various screen readers & assistive technologies that will look @ this language attribute so that when they read out the website, they can pronounce the words correctly.</p></li>
+                    <li><p>head element; This is an area where important information about our website is placed that is not going to be displayed to the user. It includes things that will help the website render in the browser correctly, but it doesn't include any sort of content like text or images or anything that the user will see.</p></li>
+                        <ul>
+                            <li><p>One of the things that you should always have in the head section is a "meta" tag for the character set encoding of the web page, & in this case it's set as "UTF-8". What this does is it ensures that the characters that you're using on your website gets displayed correctly. So, for example, in certain character sets it won't allow emojis to render, in other character sets they won't have certain symbols like multiplication & division symbols, & that's what this "meta" tag takes care of. Usually by convention in our HTML boilerplate, we will simply just include this tag as is using the "UTF-8" character set, which is one of the most common. So you don't even have to think about it.</p></li>
+                            <li><p>Another thing that you should have in your head section is the "title" of your website, & that title is usually what gets displayed up in the tab bar, & in fact if you right-click on any website in Chrome, you can click to "View page source" & in between the opening & closing tags of the title, it tells you what title should be displayed up there.</p></li>
+                        </ul>
+
+                        <p>Now, there's a lot more things that can go into the head element, as you've seen when we looked @ the Google home page, but for now, these 2 are the most important things that will always go into your HTML files & it's important to know. We'll cover other tags as we come across them.</p>
+                    <li><p>The body element; just like a person, after the head element comes the "body" element. Inside the body element is where we're going to be spending the majority of our time creating & writing our website. This is where all of the content of the website goes. Everything that you can do with HTML, creating content & structure goes in between the opening & the closing tags of the body element.</p></li>
+                </ul>
+
+            <h2>VS Code Boilerplate trick</h2>
+                <img src="./assets/images/VS Code boilerplate trick for html files.png" alt="VS Code boilerplate trick for html files.png" class="ctr75">
+
+                <p>There's a couple of things here that we haven't seen before, a couple of more "meta tags" & there's a lot of other meta tags.</p>
+                    <ul>
+                        <li><p><span class="key">&#8249;</span>meta http-equiv="X-UA-Compatible" content="IE=edge"<span class="key">&#8250;</span> - This basically just keeps our code compatible with Internet Explorer, & in fact I normally don't write this line anymore coz Internet Explorer has been deprecated, & is no longer in use. So if you want to keep your code clean, you can actually delete this from your VS Code autogenerated boilerplate.</p></li>
+                        <li><p>The next one tells you the "viewport" & it defines how the website should be displayed relative to the screen that it's being rendered on, & this line of code just tells the browser how to display your website when it first opens.</p></li>
+                    </ul>
+            
+            <h2>&#128248; Capture</h2>
+                <p>Now, we're beginning to see this idea of nesting in an HTML document, & this is going to be a concept that's going to become super important as we learn more & more programming.</p>
+                <p>The important thing here I want you to understand is how nesting works in HTML & how you can keep your code tidy by using good indentation & keeping good programming practices.</p>
+    </div>
+</body>
+</html>

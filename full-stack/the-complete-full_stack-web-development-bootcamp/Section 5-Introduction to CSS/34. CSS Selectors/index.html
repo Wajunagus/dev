@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>34. CSS Selectors</title>
+    <link rel="stylesheet" href="/darkMode.css">
+</head>
+<body>
+    <div><p class="date"><span>Thursday, July 4 2024</span></p>
+        <div class="hdg">
+            <h1>CSS Selectors</h1>
+            <p>Choosing Where to Apply CSS</p>
+            <hr>
+        </div>
+        <div class="main">
+            <p>In this lesson, we're going to be talking about CSS selectors, & this is going to help us choose where to apply our CSS.</p>
+            <p><span class="emph">What is a CSS selector?</span> Well, it's the part that selects the HTML in order to apply whichever rules go in between the curly braces.</p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>Element Selector</h2>
+                <hr>
+            </div>
+            <div class="img50">
+               <img src="./assets/images/Element Selector.png" alt="Element Selector.png">
+               <img src="./assets/images/Element Selector ii.png" alt="Element Selector ii.png">
+               <img src="./assets/images/Element Selector iii.png" alt="Element Selector iii.png">
+            </div>
+            <p>This style of selector is one of the simplest CSS selectors, & all it does is it selects a particular HTML tag. So in this case it's targeting all h1s. If your HTML is any good, you should only have a single h1, but it will be different for other tags.</p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>Class Selector</h2>
+                <hr>
+            </div>
+            <div class="img50">
+                <img src="./assets/images/Class Selector.png" alt="Class Selector.png">
+                <img src="./assets/images/Class Selector ii.png" alt="Class Selector ii.png">
+                <img src="./assets/images/Class Selector iii.png" alt="Class Selector iii.png">
+            </div>
+            <p>This requires a special symbol, which is the dot (.), & then after that dot immediately with no spaces, then you have the name of the class.</p>
+            <p><span class="emph">What is a class?</span> A class is something that we can add as an attribute to any HTML element. And this attribute is kind of like saying, well, let's group these particular elements into a class. So it's used for grouping elements in your HTML file to apply the same CSS rule to all of them.</p>
+        <hr>
+            <p>Now, what if we had multiple elements with the same class? Even though these 2 are completely different elements, we can tag them using the same class.</p>
+            <div class="img50">
+                <img src="./assets/images/Class Selector-multiple elements.png" alt="Class Selector-multiple elements.png">
+                <img src="./assets/images/Class Selector-multiple elements ii.png" alt="Class Selector-multiple elements ii.png">
+                <img src="./assets/images/Class Selector-multiple elements iii.png" alt="Class Selector-multiple elements iii.png">
+            </div>
+            <p>As you can see, the class selector is really <strong>versatile</strong>, <span class="key">it allows you to group different parts of your HTML file into having the same styling.</span> And this can be really, really useful on multi-page websites with lots of different elements, & you don't just want to select a particular type of HTML element.</p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>Id Selector</h2>
+                <hr>
+            </div>
+            <p>The ID Selector has its own special symbol, which is a pound sign or a hashtag (#), & you put that pound sign & again, no spaces in between the pound sign & the actual name of the ID, & this selects all elements with a particular ID attribute.</p>
+            <div class="img50">
+                <img src="./assets/images/ID Selector.png" alt="ID Selector.png">
+                <img src="./assets/images/ID Selector ii.png" alt="ID Selector ii.png">
+                <img src="./assets/images/ID Selector iii.png" alt="ID Selector iii.png">
+            </div>
+            <p>It works similarly to the class selector.</p>
+            <p><span class="emph">So then what is the difference between the ID & the class selector?</span> Well, the class selector can be applied to many elements, whereas the ID should be only applied to 1 element in a single HTML file. In a single HTML file like our index.html, there should only be 1 ID of this particular name, "main". It should be completely <strong>unique</strong> & this is the difference.</p>
+        </div>
+        <div class="main">
+            <p>Again, remember, IDs are unique, only 1 element per file and classes you can put on as many elements as you like to group them together.</p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>Attribute Selector</h2>
+                <hr>
+            </div>
+            <p>Another way that you can select parts of your HTML is using the attribute selector.</p>
+            <p>So we know that we can create a HTML tag & add as many attributes as we like. Now, we can select the elements that have particular <strong>attributes</strong> or particular <strong>attributes values</strong> by using this notation. Notice the first part is the HTML element that you want to select, & then using a set of square brackets [], then inside we can include the attribute that you want to select.</p>
+            <div class="img50">
+                <img src="./assets/images/Attribute Selector.png" alt="Attribute Selector.png">
+                <img src="./assets/images/Attribute Selector ii.png" alt="Attribute Selector ii.png">
+                <img src="./assets/images/Attribute Selector iii.png" alt="Attribute Selector iii.png">
+            </div>
+        <hr>
+            <p>Now, you can go 1 step further with attribute selectors. You can actually select the <strong>value</strong> of the attribute that you want to apply your CSS to.</p>
+            <div class="img50">
+                <img src="./assets/images/Attribute Selector-value.png" alt="Attribute Selector-value.png">
+                <img src="./assets/images/Attribute Selector-value ii.png" alt="Attribute Selector-value ii.png">
+                <img src="./assets/images/Attribute Selector-value iii.png" alt="Attribute Selector-value iii.png">
+            </div>
+            <p>This is again a really <strong>versatile</strong> way of applying CSS, but as you can see, it selects on different things than what we've seen before.</p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>Universal Selector</h2>
+                <hr>
+            </div>
+            <p>It's really simple. It's just an asterix (*). And after the asterix you have your CSS rules, but what this means is select all.</p>
+            <div class="img50">
+                <img src="./assets/images/Universal Selector.png" alt="Universal Selector.png">
+                <img src="./assets/images/Universal Selector ii.png" alt="Universal Selector ii.png">
+                <img src="./assets/images/Universal Selector iii.png" alt="Universal Selector iii.png">
+            </div>
+            <p>And when you apply this, it doesn't matter what class you've got, what ID, what attribute set, which different elements, if you select all, it's going to apply the style to everything where the stylesheet is active. And this is probably one of the simplest selectors to understand.</p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>&#x1F4DC;Resource</h2>
+                <hr>
+            </div>
+            <p>&#x1F4DC;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank">&#x2329;li&#x232A;: The List Item element</a></p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>&#x270D;Exercise</h2>
+                <hr>
+            </div>
+            <p>&#x270D;<a href="./5.3 CSS Selectors/index.html" target="_blank">5.3 CSS Selectors/index.html</a></p>
+            <p>You can almost even use this website as a revision tool coz each of the bullet points are linked to a particular style of CSS selection.</p>
+            <p>Now attribute selectors can be a little bit tricky.</p>
+            <p>So if you didn't understand this @ all, be sure to rewind in the video & watch that section of the video again, just to make sure that you fully understand what's going on before you move on.</p>
+        </div>
+    </div>
+</body>
+</html>

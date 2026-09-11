@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39. Font Properties</title>
+    <link rel="stylesheet" href="/darkMode.css">
+</head>
+<body>
+    <div><p class="date"><span>Tuesday, August 6 2024</span></p>
+        <div class="hdg">
+            <h1>Font Properties</h1>
+            <p>Changing the appearance of text</p>
+            <hr>
+        </div>
+        <div class="main">
+            <p>Now, in this lesson, we're going to talk a bit more about the different CSS properties that we can set for fonts so we can change the appearance of the text in our websites.</p>
+            <p>And we've already seen some of them, for example, the color property which sets the text color, but there's other ones as well, such as the font-weight, font-size & font-family, which is the typeface that we want to use.</p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>Font Size</h2>
+                <hr>
+            </div>
+            <p><span class="key bld">1px = 1/96th inch;</span> in metric units it's about 0.26mm. It's 0.26mm wide & 0.26mm tall, so it's a small cube that's very, very tiny.</p>
+            <p>The reason why we're using imperial units is coz a lot of the sizing for websites & for design work comes from the olden days of book printing, book binding & it was very traditional.</p>
+            <hr>
+            <p>There are other ways that we can represent the font size when we're writing CSS.</p>
+            <p>One common way that you'll see in addition to pixels is using a <strong>point</strong>.</p>
+            <p><span class="key bld">1pt = 1/72nd inch;</span> slightly bigger than a pixel.</p>
+            <p>If 1/96 of an inch is 0.26mm, 1/72 of an inch is about 0.35mm, just a tiny bit bigger.</p>
+            <p>The point is actually often used in many different applications. So when you select a 12-size font in, say Word, you're actually selecting 12 points. So that means when you're using 12 points on your web page, you can expect that when a website is @100%, it will look about the same as a 12 font on your word document.</p>
+            <hr>
+            <p>In addition, there are some other ways of representing font-size, the <strong>"em"</strong> & the <strong>"rem"</strong>.</p>
+            <div class="img80">
+                <img src="./assets/images/Font size.png" alt="Font size.png">
+            </div>
+            <p><span class="key bld">1em;</span> 100% of parent. The em is actually not pronounced em, it's pronounced "m", so it's pronounced in the same way that the "m" is in the alphabet. Why is that? Well, 1em is defined as the full width of an m. The letter m is probably one of the widest letters in the English alphabet, & this unit simply represents that entire width. It's basically a relative size.</p>
+            <p><span class="key bld">1rem;</span> 100% of root. It's a relative size, but it's now relative, instead of to the parent, it's relative to the root of your HTML file, which if you remember, the root is usually an html element that encloses everything inside.</p>
+            <p>The main difference between rem & em is the fact that rem is a consistent way of changing the sizing. So I normally recommend that everybody who develops websites, when you're setting the font size, to use the rem. Coz the way that you have different things embedded in others, then the relationship to the parent can very quickly get very confusing & you don't know whose parent you're referring to, especially when you're working in a separate CSS file.</p>
+            <hr>
+            <p>So, understand how the rem works, remember, it is a scaled size of the root, 1rem is 1Xroot size, 2rem is 2Xroot size, & this is a much easier way to control the different sizes of various elements on your screen & to have more clarity around what's going on.</p>
+            <hr>
+            <h3>Sample Code</h3>
+                <p>&#128279;<a href="./6.1 Font Properties/font-size.html" target="_blank">6.1 Font Properties/font-size.html</a></p>
+            <p>We can also use named font sizes such as xx-large.</p>
+            <p>The pixel & point are <strong>static</strong> sizes.</p>
+            <p>The em & rem are <strong>relative</strong> sizes.</p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>Font Weight</h2>
+                <hr>
+            </div>
+            <p>You can have normal or bold.</p>
+            <p>It just makes the font look a bit heavier.</p>
+            <div class="img50">
+                <img src="./assets/images/Font weight.png" alt="Font weight">
+                <p>But out in the wild you might see some other ways that people use to change the font-weight in addition to the basic keywords.</p>
+                <p>You can have a relative font-weight which is relative to the parent to have the font lighter or have it bolder.</p>
+                <p>In addition, you can also use a number from 100 up to 900 to determine how light or how bold you want the font to be.</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>Font Family</h2>
+                <hr>
+            </div>
+            <p>It determines what you want your text to look like.</p>
+            <div class="img50">
+                <img src="./assets/images/Font family.png" alt="Font family">
+                <p>In the first example, we've got the font-family that is set to <strong>Helvetica</strong>. This is a particular <strong>typeface</strong> & the name is called Helvetica, but this is a <span class="key">Mac-specific typeface</span>. So there are many Windows computers that do not own this typeface. That's why very often when we write a font-family, we don't just write the font name, we have a comma, & then we have a <span class="key">backup <strong>generic</strong> font type</span>. So in this case it's a <strong>sans-serif</strong>.</p>
+                <p>What is important though, is having the <span class="key"><strong>generic</strong> typeface</span>. This means that when you have this set, that Mac users will see this font, but Windows users will see something that's relatively equivalent & it will be automatically displayed for them when it doesn't work.</p>
+                <p>Now, what if you have a font that has many words in it? For example, <strong>"Times New Roman"</strong> consists of 3 words. Well, in this case, we actually need the <strong>quotation marks</strong> around it so that we can tell the <strong>CSS file</strong> that there are <span class="key">spaces in the name of the font family</span>. So just be careful about that when you're using it. And because "Times New Roman" is a <span class="key"><strong>serif-type</strong> font</span>, then the backup, the generic type is also a <strong>serif</strong>.</p>
+            </div>
+            <div class="img50">
+                <img src="./assets/images/Font types.png" alt="Font types">
+                <p>A <strong>sans-serif</strong> is simply the type of font where all the edges are pretty much @ right angles.</p>
+                <p>If you had these little feet or these little decorations @ the edges of your letters, then very often what you're looking @ is a <strong>serif-type</strong> font.</p>
+                <p>So that's the main 2 types of different <strong>typefaces</strong>. And in later lessons, we cover typefaces in more detail.</p>
+            </div>
+            <hr>
+            <p>Now, what if you want a completely custom font that maybe the user doesn't have? Well, one of the best places to find free fonts is going over to fonts.google.com. And here you can find all sorts of different fonts & there are so, so many for you to choose from & you can browse to your heart's content. &#x1F4DC;<a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>Exercise I</h2>
+                <hr>
+            </div>
+            <p>&#x270D;<a href="./6.1 Font Properties/font-family.html" target="_blank">6.1 Font Properties/font-family.html</a></p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>Text Align</h2>
+                <hr>
+            </div>
+            <p>There is this property called "text-align" where you can set it to say, centered, or you can set it to the left or to the right. And you've also got some values like start & end. And basically start is when you have text that maybe starts, writing from the right to left, such as in Arabic.</p>
+            <hr>
+            <p>&#x1F4DC;<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" target="_blank">mdn web docs - text-align</a></p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>Exercise II</h2>
+                <hr>
+            </div>
+            <p>&#x1F4DC;<a href="./6.1 Font Properties/index.html" target="_blank">6.1 Font Properties/index.html</a></p>
+        </div>
+    </div>
+</body>
+</html>

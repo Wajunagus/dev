@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32. Why do we need CSS?</title>
+    <link rel="stylesheet" href="/darkMode.css">
+</head>
+<body>
+    <div><p class="date"><span>Thursday, June 13 2024</span></p>
+        <div class="hdg">
+            <h1>Introduction to CSS</h1>
+            <p>What is CSS?</p>
+            <hr>
+        </div>
+        <div class="main">
+            <p>Welcome to the Introduction to CSS Section. And in this very 1st lesson, we're going to be introducing you to CSS. You'll be learning what it is, how it works & why we need it to be able to style our websites & make them look beautiful.</p>
+            <p>What exactly is CSS? Well, it stands for "Cascading Style Sheets." It kind of conjures up the image of a cascade, right? And a cascade is simply like a waterfall. You have water @ one level that then drops down through a waterfall into another level. And we're going to see as we start to use these cascading style sheets, why that analogy is so apt. Because the way that the style is applied cascades like a waterfall. We start from the most general all the way down to the most specific styling requirements, & we're going to see that in use as we use these cascading style sheets.</p>
+            <div class="img50">
+                <img src="./assets/images/Cascading Style Sheets.png" alt="Cascading Style Sheets.png">
+            </div>
+            <p>The other part of this name is the "Style Sheet." A style sheet is a type of language similar to how we had the HTML, which is a markup language, that's what the "ML" part of HTML stands for. We have the style sheet, which is what the "SS" part stands for, & this is a language that allows us to specify how things should look in our website. And there are many different types of stylesheet languages. The one that's most important & what we're going to be learning all about in this section is the cascading style sheet.</p>
+            <p>The most important one that every web developer needs to know is CSS, & that's what we're going to be focusing on.</p>
+            <p>So why did we need CSS? Where did it come from & what exactly is the history of this whole thing? Well, in the very beginning when the Internet was very, very new, there was no CSS, there was only HTML. And one of the things that developers started wanting to do is they wanted to style their website & make it look the way they wanted it to, but they were really, really limited by HTML.</p>
+            <div class="img50">
+                <img src="./assets/images/Now famous email sent by Marc Andreessen.png" alt="Now famous email sent by Marc Andreessen.png">
+                <img src="./assets/images/Now famous email sent by Marc Andreessen-ii.png" alt="Now famous email sent by Marc Andreessen-ii.png">
+                <p>And this is a now famous email sent by Marc Andreessen, who is the founder of Mosaic, which is one of the earliest Internet browsers who later founded Netscape & now the very famous Andreessen Horowitz VC Fund. And in this email he famously said that the answer he has for so many developers who want to simply control what their documents look like, meaning what their websites look like in a way that would be trivial, say in Microsoft Word, his answer to these developers is just, "Sorry, you're screwed." There is no way to do it very easily @ that point in HTML. That's why all the website looks pretty much the same, pretty boring, & there was no variation.</p>
+            </div>
+            <div class="img50">
+                <img src="./assets/images/Mosaic.png" alt="Mosaic.png">
+                <img src="./assets/images/Netscape.png" alt="Netscape.png">
+                <img src="./assets/images/The very famous Andreessen Horowitz VC Fund.png" alt="The very famous Andreessen Horowitz VC Fund.png">
+            </div>
+            <p>So what happened next? Well the W3C consortium respondend by releasing a new version of HTML, HTML 3.2, & this came out in 1997, so it was still in the very early days of the Internet.</p>
+            <div class="img80">
+                <img src="./assets/images/W3C.png" alt="W3C.png">
+            </div>
+            <p>And what this 3.2 HTML allowed was, it introduced new HTML tags such as the font tag, which allows you to define the font size, the color & the font face. So the type of font you would want to use for your document. Similarly, there was also the color attribute for font. There was the face attribute, the size attribute, & these attributes allow you to change all sorts of things about the way the text looks on your website. And then there was also the center element which allows you to format your document & define how it would be laid out on the screen.</p>
+            <div class="img80">
+                <img src="./assets/images/HTML 3.2 tags-attributes & element.png" alt="HTML 3.2 tags-attributes & element.png">
+            </div>
+            <p>Now, what you'll notice in all 3 of these Web pages is the deprecated symbol next to it. All of these are deprecated, which in programming lingo, simply means you should no longer be using these attributes & elements.</p>
+            <p>And the reason for this is coz, as you can imagine, HTML is supposed to be for content. Now, if you add in a ton of styling into all of that content, then this is going to massively clutter up all of your HTML, that we can't really tell what exactly is the structure & the content of the website. And if you extend this to a larger website & you just want to do some simple things like give it some colors or put things into the center, then your whole HTML file is going to be many, many, many thousands of lines long & it's impossible to differentiate the content from the styling.</p>
+            <div class="img80">
+                <img src="./assets/images/Reason for deprecation.png" alt="Reason for deprecation.png">
+            </div>
+            <p>So what happened next? Well, in 1996, a new recommendation was proposed by the W3 consortium, & this was led by Hakon Wium Lie. And he's basically the father of the Cascading Style Sheet. And what this recommendation allows us to do is to allow us to attach styles such as font colors & spacing to our HTML documents. And this is the breakthrough that allowed us to separate our styling from our content.</p>
+            <div class="img80">
+                <img src="./assets/images/New recommendation proposed by the W3 consortium.png" alt="New recommendation proposed by the W3 consortium.png">
+            </div>
+            <div class="img25">
+                <img src="./assets/images/Hakon Wium Lie.png" alt="Hakon Wium Lie.png">
+            </div>
+            <div class="img80">
+                <img src="./assets/images/separation of concerns.png" alt="separation of concerns.png">
+            </div>
+            <p>And as in many different situations, a <span class="key">separation of concerns</span> so that somebody is responsible for putting together the car headlights & somebody else is responsible for dealing with the wheels rather than 1 person making an entire car, this kind of <strong>modularity</strong>, as you'll see in coming lessons, is super important, not just in manufacturing & in real life, but also in programming.</p>
+        </div>
+        <div class="main">
+            <div class="subHdg">
+                <h2>Resource</h2>
+                <hr>
+            </div>
+            <p>If you want to see what CSS is able to achieve, I've built this website for you to be able to do that. And when you first go over there, you'll see that it's just a very simple website, pretty bland. All it's got is HTML. And now if we go ahead & press this button to toggle & turn on CSS, then you'll see the entire website transform & look way more beautiful. But you'll notice that if you go ahead & right-click & View Page Source, in these 2 versions, the HTML does not change @ all. The only thing that is different is the CSS that gets added. Now don't worry too much about the script tags or how we've created our button, we're going to learn all of that later on when we learn JavaScript. But I created this website so that you can play around with toggling the CSS on & off to see how it can transform a simple HTML website without touching any of the code inside the HTML. And all that we're doing is adding style to our website in a completely separate language, the Cascading Style Sheet.</p>
+            <p>&#x1F4DC;<a href="https://appbrewery.github.io/just-add-css/" target="_blank">Toggle CSS - https://appbrewery.github.io/just-add-css/</a></p>
+        </div>
+    </div>
+</body>
+</html>

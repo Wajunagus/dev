@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>41. The CSS Box Model-Margin Padding & Border</title>
+    <link rel="stylesheet" href="/darkMode.css">
+</head>
+<body>
+    <div><p class="date"><span>Monday, August 12, 2024</span></p>
+        <div class="hdg">
+            <h1>The Box Model</h1>
+            <p>Margin, Padding & Border</p>
+            <hr>
+        </div>
+        <div class="main">
+            <p>These 3 properties Margin, Padding & Border along with Width & Height, form a really important CSS concept known as the "Box model".</p>
+            <p>Well, if you think of a typical website here, like I Love Bacon, then you've got different HTML elements that are on screen.</p>
+            <p>And even though we can't really see it, effectively each element is a box in itself, & we can change the dimensions of those boxes by changing things such as width & height. And that invisible box around the elements describes how it would be laid out on screen.</p>
+            <p>We can change the height of an element to allow it to take up more vertical spacing on the web page. Similarly, we can also change the width of an element to allow it to take up more space horizontally, & we can either do this using pixels or percentages.</p>
+        </div>
+        <div class="hdg">
+            <h2>Border</h2>
+            <hr>
+        </div>
+        <div class="main">
+            <p>In addition to width & height, we can also set a border on each of the HTML elements. And the way that the border property works is a little bit different from what you might have seen before. It can take 3 values separated by a space.</p>
+            <ol>
+                <li>The first value that you should provide is the thickness of the border.</li>
+                <li>The second item is the style of the border. You can have for example, solid, but you can also have a dashed line.</li>
+                <li>And finally, you've got the color of the border in which you can set to any named color or hex color as we've covered in the color properties lesson.</li>
+            </ol>
+            <p>Remember, the important thing is that the height & the width of your HTML element, your box does not change. So the border actually goes outwards rather than inwards.</p>
+            <p>Now, once you've defined a border, you can further modify it with more specific rules.</p>
+            <p>This border width works Similarly to the way that the border property works, namely that it can take a maximum of 4 values.</p>
+            <ol>
+                <li>Top</li>
+                <li>Right</li>
+                <li>Bottom</li>
+                <li>left</li>
+            </ol>
+            <p>It goes in a clockwise direction.</p>
+            <p>In addition, you can also just provide two values for the border width.</p>
+        </div>
+        <div class="hdg">
+            <h2>Padding</h2>
+            <hr>
+        </div>
+        <div class="main">
+            <p>Now, another property I want to talk about in regards to the box model is padding. And this is most easily seen when we have content such as text.</p>
+        </div>
+        <div class="hdg">
+            <h2>Margin</h2>
+            <hr>
+        </div>
+        <div class="main">
+                <p>In addition to the padding, there's also a margin. And the margin is actually the part that's outside of the border. And it adds spacing between elements that you would not get with the padding.</p>
+        </div>
+        <div class="hdg">
+            <h2>Box Model</h2>
+            <hr>
+        </div>
+        <div class="main">
+            <p>This box model is going to come really, really handy when you start to try & lay out different items on your website determining how they look & where they're placed relative to each other.</p>
+            <p>The final thing I wanted to mention is that padding & margin, similar to what we saw for the border & also the border-width, function in that same way where we've got 4 values that we can provide which will determine how they look on all 4 sides.</p>
+            <p>Again, with the border-width, you can change to only provide 2 values.</p>
+            <p>So this is just a particular way of how these 3 properties can accept multiple values.</p>
+        </div>
+        <div class="hdg">
+            <h2>Content Division Element</h2>
+            <hr>
+        </div>
+        <div class="main">
+            <p>In addition to the boxes that are created by elements, we can actually create our own boxes independent of that, & that's really useful when we want to group different bits of content together so that we can style it together or maybe we want to lay it out together.</p>
+            <p>There was no point in learning about the div element before we could learn about CSS coz these are completely invisible unless you apply CSS style to it & the whole purpose is to act as an invisible box that can contain content in between the opening & the closing tags. In the middle, we can put as many elements as we want & we can group them into separate boxes known as "divs".</p>
+        </div>
+        <div class="hdg">
+            <h2>&#x1F4BD;Resources</h2>
+            <hr>
+        </div>
+        <div class="main">
+                <p>Coz these divs are invinsible, sometimes it can be really hard to debug them & understand what's going on or more likely what's going wrong with your CSS.</p>
+                <p>So there's a free Chrome extension that I recommend you download to make this process of debugging a little bit easier & hence that's why it's called "Pesticide". We're going to use it to get rid of bugs in our CSS.</p>
+                <p>&#x1F4BD;<a href="https://chromewebstore.google.com/detail/pesticide-for-chrome/bakpbgckdnepkmkeaiomhmfcnejndkbi?pli=1" target="_blank">Pesticide for Chrome</a></p>
+                <p>In addition, if you close down the Chrome developer tools & hold down the control key, when you hover on each of these boxes, down @ the bottom of the screen you can see how it tells you which node you're actually hovering on, & it shows you if there are any classes or IDs on that div as well. This can be really helpful for you to see exactly what's on screen & almost like put on night vision goggles so that we can see our divs, our elements & their alignment & sizing.</p>
+        </div>
+        <div class="hdg">
+            <h2>&#9997;Exercise</h2>
+            <hr>
+        </div>
+        <div class="main">
+            <p>&#9997;<a href="./6.3 CSS Box Model/index.html" target="_blank">6.3 CSS Box Model/index.html</a></p>
+        </div>
+    </div>
+</body>
+</html>

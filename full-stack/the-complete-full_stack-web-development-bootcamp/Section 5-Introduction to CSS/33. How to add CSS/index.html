@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33. How to add CSS</title>
+    <link rel="stylesheet" href="/darkMode.css">
+</head>
+<body>
+    <div><p class="date"><span>Saturday, June 15 2024</span></p>
+        <div class="hdg">
+            <h1>How to Add CSS</h1>
+            <p>Inline, Internal & External CSS</p>
+            <hr>
+        </div>
+        <div class="main">
+            <p>There's 3 ways of adding CSS into an HTML website. Inline, Internal & External.</p>
+            <div class="img80">
+                <img src="./assets/images/Ways of adding CSS into HTML.png" alt="Ways of adding CSS into HTML.png">
+            </div>
+        </div>
+        <div class="hdg">
+            <h2>Inline</h2>
+            <hr>
+        </div>
+        <div class="main">
+            <p>As the name suggests, it goes into the same line as a particular HTML element.</p>
+            <p>The inline CSS goes into the opening tag of the HTML. It's in the same line as the HTML tag.</p>
+            <p>You've got a style attribute, which is an attribute that is globally available to all tags. As we know, normally attributes have a name of the attribute, the = sign, and a value for the attribute. In this value-section is where we add our CSS code.</p>
+            <p>Our CSS code is broken down like this:</p>
+                <ol>
+                    <li><p>The 1st part of it is the property that you want to change.</p></li>
+                    <li><p>And the 2nd part is the value of that property that you want to set it to.</p></li>
+                </ol>
+            <p>Inline elements are really useful for adding CSS style to just a single element on your HTML page. But normally that's quite cumbersome coz as you can imagine, there's tons of different HTML elements. If you have more & more of them & you wanted them to share similar styles, then you would have to add these inline styles to each & every single one of them, which is pretty tedious.</p>
+            <p>It's not normally recommended to use inline styles in your entire document. It's only for specific sections, or when you're testing, or when you only want it in 1 single element, or 1 line in your HTML document.</p>
+        </div>
+        <div class="hdg">
+            <h2>Internal</h2>
+            <hr>
+        </div>
+        <div class="main">
+            <p>This is done through a special HTML tag called the "style element." We've got an open <span class="highlight">&#8194;&#8249;style&#8250;&#8194;</span> tag & a closing <span class="highlight">&#8194;&#8249;style/&#8250;&#8194;</span> tag, & in between those 2 lines is where we add all of our CSS.</p>
+            <p>Our internal style can apply to anywhere within the same HTML document.</p>
+            <p>What we have to add in addition is what we call a "<strong>Selector</strong>," & this selector comes before a set of <strong>curly braces</strong> & then the CSS goes in between these set of curly braces.</p>
+            <p>Our Internal styling can apply to anywhere in our HTML document, & inside we can target or select as many elements as we want.</p>
+            <p>Internal styles are really useful for applying it only to 1 HTML document. The style & any code that goes in there is limited to the HTML that it sits in.</p>
+        </div>
+        <div class="hdg">
+            <h2>External</h2>
+            <hr>
+        </div>
+        <div class="main">
+            <p>The biggest difference between the external, the internal, & the inline styles is that this actually lives in a completely separate file, which you'll normally see as styles.css or main.css or anything that has a .css extension. Inside this CSS file is where we write our CSS rules.</p>
+            <p>So we've got our selector, we've got our property & we've got values & we can make many, many of these inside this file.</p>
+            <p>Now how do we link up the style sheet file with our index.html? Well inside the head section of our HTML, we would add a link element which you'll notice is a self-closing tag, so it doesn't need a closing tag. And we have 2 things that we normally write.</p>
+                <ol>
+                    <li><p>A relationship (rel) which refers to what is the role of this thing that we're linking to.</p></li>
+                    <li><p>The href, which is where is it located?</p></li>
+                </ol>
+            <p>This style of external CSS is what's used most commonly in web development. And this is what we're going to be focusing on most of the time.</p>
+        </div>
+        <div class="hdg">
+            <h2>&#128248;Capture</h2>
+            <hr>
+        </div>
+        <div class="main">
+            <p>So remember, inline is really useful when you only want to target a single element, & internal is really useful when you only want to target a single web page. But for most cases & when you have a multi-page website, then what you're going to need is the external way of adding CSS through the use of a separate file, which will be called something, something.css. And it's inside this file where you're going to be writing the CSS code that can target an entire website with all of its multiple web pages.</p>
+        </div>
+        <div class="hdg">
+            <h2>&#9997;Exercise</h2>
+            <hr>
+        </div>
+        <div class="main">
+            <p>&#128279; <a href="./5.1 Adding CSS/index.html" target="_blank">5.1 Adding CSS/index.html</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/*
+1. Position
+    
+    li {
+        color: red;
+        color: blue;
+    }
+        
+    li {
+        color: green;
+    }
+    
+2. Specificity
+    Refers to how specific a selector is in terms of the elements that you're applying the CSS rule to.
+
+    Element -> ➃
+        li {
+            color: blue;
+        }
+        
+    Class -> ➂
+        .first-class {
+            color: red;
+        }
+        
+    Attribute -> ➁
+        li[draggable] {
+            color: purple;
+        }
+        
+    Id -> ➀
+        #first-id {
+            color: orange;
+        }
+
+    <li id="first-id" class="first-class" draggable>
+
+3. Type
+
+    External -> ➂
+        <link rel="stylesheet" href="./style.css">
+
+    Internal -> ➁
+        <style>
+
+        </style>
+
+    Inline -> ➀
+        <h1 style=" ">Hello</h1>
+
+4. Importance
+    A keyword that you can apply to any CSS rule, the "important" keyword.
+
+    color: red;
+    color: green !important
+*/
+
+/* Don't change the existing CSS. */
+#outer-box {
+  background-color: purple;
+} 
+
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+.inner-box {
+  background-color: red;
+} 
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0px;
+} 
+
+.white-text {
+  color: white;  
+}

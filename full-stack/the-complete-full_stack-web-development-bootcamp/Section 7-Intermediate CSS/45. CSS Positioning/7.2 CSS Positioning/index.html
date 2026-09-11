@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    /*--
+    There are 4 different values for that property
+
+    1. Static
+        The HTML default
+
+        This basically means that each item flows as they would in our HTML.
+
+        We can set the position property to a value of static, but we also don't have to, this is just applied by default.
+
+    2. Relative
+        Position relative to default position
+
+        Takes the static position & then you can move it relative to that location.
+
+    3. Absolute
+        Position relative to;
+            i. the nearest positioned ancestor or
+            ii. top left corner of webpage
+
+        If it doesn't have a positioned ancestor, then the 2nd rule becomes valid.
+
+        The tricky thing about the absolute positioning is you have to make sure if you want it positioned relative to another item,
+        you have to set that ancestor to have position relative coz otherwise it's going to default to positioning relative to the top left of the web page.
+
+        Another aspect of absolute positioning that's important to mention is the z-index.
+            It determines which elements go on top of which in the z-axis.
+            Everything on screen has a default z-index of zero.
+
+        When you set something with absolute position, it actually takes the element out of the original HTML flow & puts it on another layer.
+        This is why we can quite easily change it to a negative z-index to push it behind or use the default, which will take it above,
+        but we can't actually have it inside the flow anymore.
+        For that to happen, we need to go back to static position or relative position.
+
+    4. Fixed
+        Position relative to top left corner of browser window
+
+        What that means is that even if you scroll up & down on the web page, it's still going to be located in the same location relative to the browser.
+    --*/
+
+    /* Write your code here */
+    .blue-box {
+        background-color: blue;
+        width: 500px;
+        height: 300px;
+        position: relative;
+        top: 200px;
+        left: 200px;
+    }
+    .red-circle {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 150px;
+        left: 250px;
+    }
+  </style>
+</head>
+<body>
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+  </div>
+</body>
+</html>
