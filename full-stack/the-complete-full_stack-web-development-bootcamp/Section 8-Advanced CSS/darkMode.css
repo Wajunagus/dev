@@ -33,6 +33,7 @@ h4 {
 header {
     margin: auto;
     padding: 5px 10px;
+    text-align: center;
 }
 header hr {
     border: 1px dotted;
@@ -40,6 +41,9 @@ header hr {
 header img {
     margin: auto;
     width: 15%;
+}
+header p {
+    color: #AC7EE1;
 }
 header small {
     font-size: 11pt;
